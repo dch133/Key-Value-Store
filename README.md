@@ -2,13 +2,17 @@
 KV-Store using semaphores and shared memory
 
 Number of pods: 256
+
 Each pod has KV pairs: 32
+
 Each Key (size 32) contains 256 values (each of size 256)
-Total size of KV-Store:
+
 
 The size per pod and the number of values stored in the pod were chosen 
 to easily associate with the allowed sizes for key and value.
+
 Since value is a char* of size 256, allow 256 values
+
 Since key is a char* of size 32, allow 32 key-value pairs (distinct) 
 
 Each key has an array of values (duplicates permitted)
